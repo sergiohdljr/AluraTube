@@ -3,7 +3,9 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/cssReset";
 import Menu from "../src/components/Menu";
 import {StyledTimeline} from "../src/components/TimeLine"
-
+import Banner from "../src/components/banner";
+import Favoritos from "../src/components/favoritos";
+import bannerImg from "../pankaj-patel-_SgRNwAVNKw-unsplash.jpg"
 function HomePage() { 
   return (
     <>
@@ -12,6 +14,7 @@ function HomePage() {
         <Menu />
         <Header />
         <TimeLine playlists = {config.playlists} />
+        <Favoritos />
       </div>
     </>
   );
@@ -27,19 +30,18 @@ const StyledHeader = styled.div`
      border-radius: 50%;
     }
    .user-info{
-    margin-top: 50px;
     display: flex;
     align-items: center;
     width: 100%;
     padding: 1rem 2rem;
     gap: 1rem;
-     }
+  }
      `
 
 function Header() {
   return (
     <StyledHeader>
-      {/* <img src="banner" /> */}
+      <Banner bannerImg={bannerImg} />
       <div className="user-info">
         <img src={`https://github.com/${config.github}.png`} />
         <div>

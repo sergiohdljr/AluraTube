@@ -1,14 +1,21 @@
 {
-  "name": "Mario Souto (DevSoutinho)",
-  "job": "Lead Software Engineer",
-  "github": "omariosouto",
+  "name": "Sérgio H. de Lima",
+  "job": "Desenvolvedor Front-end",
+  "github": "sergiohdljr",
+  "favoritos":[
+    {
+      "nickname":"room7oo",
+      "picture" :"https://yt3.ggpht.com/ytc/AMLnZu9P1qz3d9wuNQdH6yWXUX_bFwKCHhs2B_Nrxkdh=s176-c-k-c0x00ffffff-no-rj",
+      "url":"https://www.youtube.com/c/rom7ooo"
+    },
+    {
+      "nickname":"The Beauty Of",
+      "picture" :"https://yt3.ggpht.com/ytc/AMLnZu87Yu2Bo5yihIrVW-LHDubiOysP0UbBpzxRHjX6HA=s176-c-k-c0x00ffffff-no-rj",
+      "url":"https://www.youtube.com/c/TheBeautyOf"
+    }
+  ],
   "playlists": {
     "jogos": [
-        {
-          "title": "Frostpunk - Neve e Steak tartare",
-          "url": "https://www.youtube.com/watch?v=QsqatJxAUtk",
-          "thumb": "https://img.youtube.com/vi/QsqatJxAUtk/hqdefault.jpg"
-        },
         {
           "title": "Frostpunk - Neve e Steak tartare",
           "url": "https://www.youtube.com/watch?v=O8jtAyPuhNg",
@@ -50,11 +57,6 @@
         "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
         "url": "https://youtube.com/watch?v=jOAU81jdi-c",
         "thumb": "https://img.youtube.com/vi/jOAU81jdi-c/hqdefault.jpg"
-      },
-      {
-        "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
-        "url": "https://www.youtube.com/watch?v=llF6vD-RljE",
-        "thumb": "https://img.youtube.com/vi/llF6vD-RljE/hqdefault.jpg"
       },
       {
         "title": "A Primeira Aula de Flutter Que Todo Mundo Deveria Ter",
@@ -108,11 +110,6 @@
         "title": "O que é o Java? #HipstersPontoTube",
         "url": "https://www.youtube.com/watch?v=90NcVNsKGik",
         "thumb": "https://img.youtube.com/vi/90NcVNsKGik/hqdefault.jpg"
-      },
-      {
-        "title": "O que é Machine Learning? #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=Iuz_jc96bQk",
-        "thumb": "https://img.youtube.com/vi/Iuz_jc96bQk/hqdefault.jpg"
       },
       {
         "title": "A MELHOR linguagem de programação com Fabio Akita | #HipstersPontoTube",
