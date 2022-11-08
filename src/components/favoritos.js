@@ -51,7 +51,7 @@ const Favoritos = () => {
         <CardFavoritos>
             {config.favoritos.map((favorito)=>{
                 return(
-                    <a href={favorito.url}>
+                    <a key={favorito.url} href={favorito.url}>
                         <img src={favorito.picture}/>
                         <span>{favorito.nickname}</span>
                     </a>
