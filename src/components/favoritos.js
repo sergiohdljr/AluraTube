@@ -1,18 +1,18 @@
-import styled from "styled-components"
-import config from "../../config.json"
+import styled from "styled-components";
+import config from "../../config.json";
 
 const Fav = styled.div`
-width: 100%;
-height: auto;
-display: flex;
-flex-direction: column;
-padding: 1rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 
-    h2{
-        padding: 1rem;
-        margin-bottom: 0.5rem;
-    }
-`
+  h2 {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+`;
 
 const CardFavoritos = styled.div`
   width: 100%;
@@ -26,7 +26,7 @@ const CardFavoritos = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;
     flex-wrap: wrap;
 
     img {
@@ -38,28 +38,27 @@ const CardFavoritos = styled.div`
       margin-top: 6px;
       width: 100%;
       text-align: center;
-      color: black;
+      color: ${({ theme }) => theme.textColorBase};
     }
   }
 `;
 
-
 const Favoritos = () => {
-    return(
+  return (
     <Fav>
-        <h2>Canais Favoritos</h2>
-        <CardFavoritos>
-            {config.favoritos.map((favorito)=>{
-                return(
-                    <a key={favorito.url} href={favorito.url}>
-                        <img src={favorito.picture}/>
-                        <span>{favorito.nickname}</span>
-                    </a>
-                )
-            })}
-        </CardFavoritos>
+      <h2>Canais Favoritos</h2>
+      <CardFavoritos>
+        {config.favoritos.map((favorito) => {
+          return (
+            <a key={favorito.url} href={favorito.url}>
+              <img src={favorito.picture} />
+              <span>{favorito.nickname}</span>
+            </a>
+          );
+        })}
+      </CardFavoritos>
     </Fav>
-    )
-}
+  );
+};
 
-export default Favoritos
+export default Favoritos;
