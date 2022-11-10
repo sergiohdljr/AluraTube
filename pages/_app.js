@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
   const contexto = React.useContext(ColorModeContext);
   return (
     <ThemeProvider theme={theme[contexto.mode]}>
-      <CSSReset />
+      <CSSReset/>
       <Component {...pageProps} />
     </ThemeProvider>
   );
