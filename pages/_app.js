@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import  {CSSReset} from "../src/components/CSSReset";
+import  {CSSReset} from "../src/components/cssReset.js";
 import ColorModeProvider, {ColorModeContext} from "../src/components/Menu/components/ColorMode";
 
 const theme = {
@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
   const contexto = React.useContext(ColorModeContext);
   return (
     <ThemeProvider theme={theme[contexto.mode]}>
-      <CSSReset/>
+      <CSSReset></CSSReset>
       <Component {...pageProps} />
     </ThemeProvider>
   );
