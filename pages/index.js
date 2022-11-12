@@ -4,9 +4,26 @@ import styled from "styled-components";
 import Menu from "../src/components/Menu/Menu";
 import { StyledTimeline } from "../src/components/TimeLine";
 import Favoritos from "../src/components/favoritos";
+import { videoService } from "../src/sevice/VideoService";
+
 
 function HomePage() {
+  const service = videoService();
   const [valorDoFiltro, setValorDoFiltro] = React.useState("");
+  const [playlist,setPlaylist] = React.useState({})
+
+  React.useEffect(()=>{
+    service.getAllVideos().then((dados) => {
+      const novasPlaylists = { ...playlist };
+      dados.data.forEach((video) => {
+        if (!novasPlaylists[video.playlist]) {
+          novasPlaylists[video.playlist] = [];
+        }
+        novasPlaylists[video.playlist].push(video);
+      });
+      setPlaylist(novasPlaylists);
+    });
+  },[])
 
   return (
     <>
@@ -22,7 +39,7 @@ function HomePage() {
           setValorDoFiltro={setValorDoFiltro}
         />
         <Header />
-        <TimeLine searchValue={valorDoFiltro} playlists={config.playlists} />
+        <TimeLine searchValue={valorDoFiltro} playlists={playlist} />
         <Favoritos />
       </div>
     </>
